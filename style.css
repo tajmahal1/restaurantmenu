@@ -1,0 +1,182 @@
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: "BPG Nino Mkhedruli Book", sans-serif;
+
+
+}
+
+h1, h2, h3, h4, h5, h6, ul, ol, p {
+  margin: 0;
+  padding: 0;
+  display: inline;
+}
+
+h1, h2, h3, h4, h5, h6, b {
+  letter-spacing: 0;
+}
+
+ul, li {
+  list-style-type: none;
+}
+
+.justify {
+  text-align: justify;
+}
+
+.description {
+  padding-top: 15px;
+}
+
+.decorator {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  color: #535558;
+}
+.decorator:after {
+  content: " ";
+  background: -webkit-gradient(linear, left top, right top, from(#535558), to(#535558));
+  background: linear-gradient(to right, #535558, #535558);
+  height: 2px;
+  position: relative;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: auto;
+  margin: 0.75em 0px 0 20px;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  border-radius: 2px;
+}
+
+.menu {
+  background-color: #eae8e0;
+  color: #535558;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -ms-flex-line-pack: stretch;
+  align-content: stretch;
+}
+.menu-item {
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+@media screen and (min-width: 300px) and (max-width: 719px) {
+  .menu-item {
+    max-width: 400px;
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 720px) and (max-width: 1279px) {
+  .menu-item {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 1280px) and (max-width: 1919px) {
+  .menu-item {
+    width: 33%;
+  }
+}
+@media screen and (min-width: 1920px) and (max-width: 2599px) {
+  .menu-item {
+    width: 25%;
+  }
+}
+@media screen and (min-width: 2599px) {
+  .menu-item {
+    width: 15%;
+  }
+}
+.menu-item-desc-right li {
+  -ms-grid-columns: 1fr 50px;
+  grid-template-columns: 1fr 50px;
+}
+.menu-item-desc-right li b:after {
+  content: "|";
+  display: inline;
+  margin: 0 10px;
+  font-weight: 100;
+}
+.menu-item-desc-bottom li {
+  -ms-grid-columns: 1fr 50px;
+  grid-template-columns: 1fr 50px;
+  margin-bottom: 5px;
+}
+.menu-item-desc-bottom li.description {
+  padding-top: 15px;
+}
+.menu-item-desc-bottom li b {
+  display: block;
+  line-height: 100%;
+}
+.menu ul {
+  padding: 10px 0;
+  display: block;
+}
+.menu li {
+  padding: 4px 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.menu li:first-child {
+  padding: 14px 0 0;
+}
+.menu h2 {
+  text-transform: uppercase;
+  font-size: 1.8em;
+}
+.menu h3 {
+  font-weight: 300;
+  font-size: 1.4em;
+  text-transform: uppercase;
+}
+.menu h4 {
+  margin: 10px 0 5px;
+  font-weight: 500;
+}
+.menu p {
+  display: block;
+  font-weight: 300;
+  font-size: 0.9em;
+}
+.menu p + span,
+.menu h4 + span {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  min-width: 30px;
+}
+.menu h4 + span {
+  font-size: 0.6em;
+}
+.menu b {
+  font-weight: 500;
+  text-transform: uppercase;
+}
